@@ -1,0 +1,79 @@
+#hero-image {
+    width: 100.5%;
+    padding-top: 40%;
+    background: linear-gradient(0deg,rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../images/hero.jpeg);
+    background-position: 50% 60%;
+    background-size: cover;
+}
+
+#countdown-clock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h2, h3 {
+        font-weight: 600;
+        font-size: 80px;
+        text-align: center;
+    }
+
+    h3, h4 {
+        font-size: 72px;
+    }
+}
+
+#countdown-text {
+    background-color: #03763A;
+    height: 152px;
+    padding-top: 30px;
+}
+
+#countdown-clock ul {
+    text-align: center;
+    margin-bottom: 32px;
+
+    li {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+#countdown-clock li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#countdown-clock ul {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+    #hero-image {
+        margin-top: 80px;
+        width: 420px;
+    }
+
+    #countdown-clock {
+        width: 420px;
+
+        #countdown-text {
+            font-size: 40px;
+        }
+
+        ul {
+            margin-left: -30px;
+            li {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            h3 {
+                font-size: 25px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}

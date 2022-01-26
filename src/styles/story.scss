@@ -1,0 +1,32 @@
+#story {
+    margin-top: 30px;
+    scroll-margin-top: 200px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+
+    h3 {
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #story {
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

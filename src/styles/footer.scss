@@ -1,0 +1,54 @@
+footer {
+    padding-bottom: 60px;
+    background-color: #000000;
+}
+
+#footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 32px;
+    margin-top: 60px;
+    padding-bottom: 60px;
+
+    h5 {
+        font-weight: 600;
+        font-size: 22px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+#company, #footer-logo, #quick-links {
+    margin-top: 32px;
+}
+#footer-logo {
+    width: 90px;
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        width: 420px;
+        height: 600px;
+    }
+
+    #quick-links, #company {
+        h5 {
+            font-size: 25px;
+            margin-left: -8px;
+        }
+
+        a {
+            font-size: 15  px;
+        }
+    }
+
+    #quick-links h5 {
+        margin-bottom: -30px;
+    }
+}

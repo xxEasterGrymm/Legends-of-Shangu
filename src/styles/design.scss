@@ -1,0 +1,42 @@
+#design {
+    background-color: #000000;
+    margin-right: 0px;
+    border-bottom: 1px solid #fff;
+
+    img {
+        margin-left: 300px;
+    }
+}
+
+#pagoda {
+    position: relative;
+}
+
+#sword2 {
+    position: absolute;
+    right: 400px;
+}
+
+@media screen and (max-width: 500px) {
+    #design {
+        width: 420px;
+
+        img {
+            margin-left: 50px;
+        }
+
+        #pagoda {
+            width: 400px;
+            height: 300px;
+        }
+
+        #sword1, #sword2 {
+            width: 300px;
+            height: 400px;
+        }
+
+        #sword2 {
+            right: 60px;
+        }
+    }
+}

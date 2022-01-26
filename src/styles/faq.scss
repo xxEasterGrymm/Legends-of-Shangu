@@ -1,0 +1,50 @@
+#faq {
+    margin-top: 30px;
+    margin-bottom: -70px;
+
+    h3, h4 {
+        padding-left: 2vw;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    h4 {
+        font-size: 32px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        padding-left: 2vw;
+        font-weight: 600;
+    }
+
+    svg {
+        width: 25px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform-box: fill-box;
+        transform-origin: 50% 50%;
+        transform: translateY(-50%);
+        transition: transform .5s ease-in-out;
+    }
+}
+
+#how, #what, #when, #where, #who {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+#how-text, #what-text, #when-text, #where-text, #who-text {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: visibility 1s,opacity 1s,max-height 1s;
+    padding-left: 2vw;
+    width: 50%;
+}

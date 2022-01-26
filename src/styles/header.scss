@@ -1,0 +1,118 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #000000;
+}
+
+.header-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    border-bottom: solid;
+    border-bottom-color: currentcolor;
+    border-bottom-width: thin;
+}
+
+#logo-wrapper, #logo-wrapper-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo-wrapper-wrapper {
+    width: 340px;
+    height: 100%;
+    border-right: solid;
+    border-right-color: currentcolor;
+    border-right-width: medium;
+    border-color: #fff;
+    border-width: 1px;
+}
+
+#logo-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo-wrapper {
+    img {
+        display: block;
+        width: auto;
+        height: 70px;
+        margin-block-start: auto;
+        margin-block-end: auto;
+        margin-inline-end: 16px;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 22px;
+        color: #f1f1f1;
+    }
+}
+
+#nav-wrapper {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    a:not(#coming-soon-nav, #faq-nav) {
+        padding-right: 16px;
+    }
+
+     a {
+        color: #d7d7d7;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #faq-nav {
+        padding-right: 30px;
+    }
+
+    #coming-soon-nav, #nav-wrapper a {
+        color: #d7d7d7;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #coming-soon-nav {
+        padding: 4px 12px;
+        border: solid;
+        border-width: 1px;
+        border-color: #fff;
+        color: #fff;
+    }   
+}
+
+#nav-wrapper-mobile {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 500px) {
+    header a {
+      visibility: hidden;
+    }
+
+    .header-wrapper {
+        width: 420px;
+    }
+
+    #logo-wrapper, #logo-wrapper-wrapper {
+        float: left;
+        width: 101%;
+        text-align: center;
+        margin-left: -5px;
+    }
+  }

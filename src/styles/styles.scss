@@ -1,0 +1,25 @@
+@import './header.scss';
+@import './hero.scss';
+@import './footer.scss';
+@import './mint.scss';
+@import './featured.scss';
+@import './artwork.scss';
+@import './story.scss';
+@import './design.scss';
+@import './faq.scss';
+
+$primary-color: #02235b;
+$secondary-color: #ffffff;
+
+* {
+    color: $secondary-color;
+    font-family: "Lexend Deca", sans-serif;
+    margin-left: 0px;
+    
+}
+
+body {
+    background-color: $primary-color;
+    margin-bottom: -8px;
+    overflow-x: hidden;
+}
